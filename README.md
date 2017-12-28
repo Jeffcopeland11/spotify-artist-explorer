@@ -1,27 +1,41 @@
-Welcome to the Glitch BETA
-=========================
+Artist Explorer
+===============
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+See Artist Explorer at [artistexplorer.spotify.com](https://artistexplorer.spotify.com/)
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Artists Explorer is a tool that helps serious music enthusiasts explore artist relationships and discover new music. Start from any artist and quickly navigate through trees of related artists, previewing their music as you go.
 
-Find out more [about Glitch](https://glitch.com/about).
+The app pulls related artist information from Spotify Web APIs. Have a look at the documentation at:
 
+* [https://developer.spotify.com/web-api/](https://developer.spotify.com/web-api/)
 
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+Running Locally
+===============
+**Not necessary but strongly suggested:** Create a [virtualenv] (http://docs.python-guide.org/en/latest/dev/virtualenvs/) or use an existing one before installing dependencies of this project.
 
 
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
+Echo Nest API calls are proxied through a flask server. You need to start the server first.
 
-\ ゜o゜)ノ
+```
+cd server
+pip install -r requirements.txt
+python server.py
+```
+
+And you also need to serve the files at the root of the project. You can use SimpleHTTPServer module in python. To do that, change directyory to the project base and enter the following command:
+```
+python -m SimpleHTTPServer
+```
+
+App
+===
+<img src="./img/ScreenShot.png" width="750px"/>
+
+Consumed Libraries:
+--------------
+* [d3](http://d3js.org/)
+* [Google Gauge Charts](https://developers.google.com/chart/interactive/docs/gallery/gauge)
+* [Spotify Web API Wrapper](https://github.com/JMPerez/spotify-web-api-js)
+* [geoplugin](http://www.geoplugin.com/)
+* [freegeoip](https://freegeoip.net)
+
