@@ -12,7 +12,7 @@
     var userCountry = "US";
 
     //replace with configured servers uri
-    var serverBasePath = "http://localhost:10000";
+    var serverBasePath = "https://artist-explorer.glitch.me";
 
     var localApi = new localProxyApi(serverBasePath);
     var spotifyWebApi = new SpotifyWebApi()

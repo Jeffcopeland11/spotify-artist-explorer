@@ -1,0 +1,12 @@
+{
+  "name": "artist-explorer",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "spotify-web-api-node": "^2.5.0"
+  },
+  "license": "MIT",
+  "repository": "git@github.com:fsahin/artist-explorer.git"
+}
