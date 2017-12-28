@@ -244,7 +244,7 @@ var dndTree = (function() {
                 if (isArtist(d)) {
                   return AE.getSuitableImage(d.artist.images);
                 } else {
-                  return 'img/spotify.jpeg';
+                  return 'https://cdn.glitch.com/2ccce489-f391-4571-a913-c0525860dbf2%2Fspotify.jpeg?1514466787224';
                 }
             })
             .attr("x", "-32px")

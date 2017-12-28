@@ -492,7 +492,7 @@
     function getSuitableImage(images) {
         var minSize = 64;
         if (images.length === 0) {
-            return 'img/spotify.jpeg';
+            return 'https://cdn.glitch.com/2ccce489-f391-4571-a913-c0525860dbf2%2Fspotify.jpeg?1514466787224';
         }
         images.forEach(function (image) {
             if (image && image.width > minSize && image.width > 64) {

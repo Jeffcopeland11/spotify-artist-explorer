@@ -23,19 +23,19 @@ function refreshSpotifyClientCredsAccessToken() {
 refreshSpotifyClientCredsAccessToken();
 
 function retryForUnauthorized(promise) {
-  const p = new Promise();
-  promise().then(res => {
-    p.resolve(res);
-  }).catch(err => {
-    if (err.status === 403) {
-      refreshSpotifyClientCredsAccessToken().then(() => {
-        return promise();
-      });
-    } else {
-      p.reject(err);
-    }
+  return new Promise((resolve, reject) => {
+    promise().then(res => {
+      resolve(res);
+    }).catch(err => {
+      if (err.status === 403) {
+        refreshSpotifyClientCredsAccessToken().then(() => {
+          return promise().then(resolve).catch(reject);
+        });
+      } else {
+        reject(err);
+      }
+    });
   });
-  return p;
 };
 
 var app = express();
