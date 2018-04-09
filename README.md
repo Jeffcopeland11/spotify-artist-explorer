@@ -1,7 +1,7 @@
 Artist Explorer
 ===============
 
-See Artist Explorer at [artistexplorer.spotify.com](https://artistexplorer.spotify.com/)
+See Artist Explorer at [artist-explorer.glitch.me](https://artist-explorer.glitch.me/)
 
 Artists Explorer is a tool that helps serious music enthusiasts explore artist relationships and discover new music. Start from any artist and quickly navigate through trees of related artists, previewing their music as you go.
 
