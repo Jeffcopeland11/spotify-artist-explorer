@@ -71,13 +71,13 @@
 
     window.addEventListener('load', function () {
 
-        $.ajax({
-            url: "https://freegeoip.net/json/"
-        }).done(function (data) {
-            if (data.country_code) {
-                userCountry = data.country_code;
-            }
-        });
+        // $.ajax({
+        //     url: "https://freegeoip.net/json/"
+        // }).done(function (data) {
+        //     if (data.country_code) {
+        //         userCountry = data.country_code;
+        //     }
+        // });
 
         initContainer();
 
