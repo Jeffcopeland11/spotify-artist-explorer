@@ -1,4 +1,4 @@
-/* global SpotifyWebApi, dndTree, $, geoplugin_countryCode, Promise, google, setRepeatArtists */
+/* global SpotifyWebApi, dndTree, $, Promise, google, setRepeatArtists, ko, localProxyApi */
 (function () {
     'use strict';
 

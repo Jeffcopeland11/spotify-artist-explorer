@@ -55,7 +55,7 @@ app.get('/api/genres/:genreName/artists', (req, res) => {
     })
   ).then((recommendations) => {
     res.send(recommendations.body);
-  });;
+  }).catch(console.log);
 });
 
 app.get('/spotify/artists/:artistId', (req, res) => {
@@ -63,7 +63,7 @@ app.get('/spotify/artists/:artistId', (req, res) => {
     spotifyApi.getArtist(req.params.artistId)
   ).then(artist => {
     res.send(artist.body);
-  });
+  }).catch(console.log);
 });
 
 app.get('/spotify/artists', (req, res) => {
