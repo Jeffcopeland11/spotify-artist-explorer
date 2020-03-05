@@ -97,7 +97,7 @@
                   <button data-bind="css: {'spoticon-play-16': !isPlaying(), 'spoticon-spotify-connect-16': isPlaying()}, click: $parent.playTrackWithoutGap" class="astext"></button>
                 </td>
                 <td class="tl-save">
-                  <button> data-bind="css: {'spoticon-plus-16': !isSaved(), 'spoticon-check-16': isSaved()}, click: $parent.saveTrack", class="astext" </button>
+                  <button data-bind="css: {'spoticon-plus-16': !isSaved(), 'spoticon-check-16': isSaved()}, click: $parent.saveTrack" class="astext" ></button>
                 </td>
                 <td class="wrapp" data-bind="event: { mouseover: $parent.playTrack, mouseout: $parent.playTrackCancel }">
                   <a target="_blank" data-bind="text: name, attr: { href:spotifyLink }"> </a>
@@ -186,7 +186,7 @@
               <form>
                 <div id="playlist-name-form-group" class="form-group">
                   <label for="playlist-name" class="control-label">Playlist Name:</label>
-                  <input type="text" id="text-playlist-name" class="form-control" id="playlist-name" placeholder="Enter Playlist Name">
+                  <input type="text" class="form-control" id="playlist-name" placeholder="Enter Playlist Name">
                 </div>
               </form>
             </div>
@@ -204,7 +204,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title warning" id="exampleModalLabel">Error</h4>
+              <h4 class="modal-title warning" id="example-ModalLabel">Error</h4>
             </div>
             <div class="modal-body" data-bind="text: errorMessage"></div>
             <div class="modal-footer">
@@ -227,7 +227,7 @@
           </div>
         </div>
       </div>
-
+    </div>
   </body>
   <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['gauge']}]}"></script>
   <script src="https://unpkg.com/spotify-web-api-js@0.23.0/src/spotify-web-api.js"></script>
