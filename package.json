@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "node": "^13.9.0",
     "spotify-web-api-node": "^4.0.0"
   },
   "license": "MIT",
