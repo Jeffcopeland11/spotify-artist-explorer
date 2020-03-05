@@ -31,7 +31,7 @@
     </script>
     <script>
       if (window.location.protocol != "https:") {
-        window.location = "https://artist-explorer.glitch.me/";
+        window.location = "https://spotify-artist-explorer.glitch.me/";
       }
     </script>
     <div class="main-container">
@@ -85,7 +85,7 @@
         <div data-bind="visible: isArtistInfoVisible" id="infobox">
           <h4>Artist Info </h4>
           <a target="_blank" data-bind="text: artistName, attr: { href:spotifyLink }" id="artistName"> </a>
-          <p </p>
+          <p> </p>
           <div id="chart_div" style="width: 350px; height: 120px;"></div>
 
           <h4>Popular Tracks</h4>
@@ -143,14 +143,14 @@
               </ul>
 
               <ul class="nav navbar-nav navbar-right">
-                <li><a  href="#" data-bind="visible: !isLoggedIn()" onClick="AE.login()">Log In</a></li>
+                <li><a  href="#" data-bind="visible: !isLoggedIn()" onclick="AE.login()">Log In</a></li>
                 <li class="dropdown" data-bind="visible: isLoggedIn()">
                   <img class="profile-image" data-bind="attr:{src: userImage}"/>
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <span id="display-name" data-bind="text: displayName"></span>
                   <span class="icon-chevron-down"></span></a>
                   <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                    <li><a href="#" onClick="AE.logout()">Log Out</a></li>
+                    <li><a href="#" onclick="AE.logout()">Log Out</a></li>
                   </ul>
                 </li>
               </ul>
@@ -168,7 +168,7 @@
         </div>
         <div id="tree-container"></div>
           <div id="share-div">    
-           <button type="button" class="btn btn-primary btn-sm" onClick="AE.createPlaylistModal()">    
+           <button type="button" class="btn btn-primary btn-sm" onclick="AE.createPlaylistModal()">    
              Create Playlist
            </button>   
          </div>
@@ -192,7 +192,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary btn-sm" onClick="AE.createPlaylist()">Create</button>
+              <button type="button" class="btn btn-primary btn-sm" onclick="AE.createPlaylist()">Create</button>
             </div>
           </div>
         </div>
