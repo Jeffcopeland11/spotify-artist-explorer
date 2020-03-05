@@ -2,4 +2,3 @@ Flask==1.1.1
 Flask-Cors==3.0.7
 pyen==2.3.1
 spotipy==2.9.0
-node==13.9.0
