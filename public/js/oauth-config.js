@@ -1,7 +1,7 @@
 var OAuthConfig = (function() {
   'use strict';
 
-  var clientId = '9787428123224ad48de472bc70557422';
+  var clientId = 'process.env.SPOTIFY_CLIENT_ID';
   var redirectUri;
   if (location.host === 'localhost:8000') {
     redirectUri = 'http://localhost:8000/callback.html';
