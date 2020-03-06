@@ -101,4 +101,4 @@ app.get('/spotify/search', (req, res) => {
 });
 
 app.use(express.static('public'))
-app.listen(process.env.PORT || 8000)
+app.listen(process.env.PORT || 3000)
